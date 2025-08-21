@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leis – Leitura Simples</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <h1>Leituras de Legislação</h1>
+  <div class="controls">
+    <label for="lawSelect" class="sr-only">Selecionar Lei</label>
+    <select id="lawSelect" aria-label="Selecionar lei"></select>
+    <input id="searchInput" type="search" placeholder="Buscar por artigo ou palavra…" aria-label="Buscar" />
+  </div>
+</header>
+
+<main class="layout">
+  <nav class="sidebar" aria-label="Lista de artigos">
+    <ul id="articleList"></ul>
+  </nav>
+
+  <article id="content" class="content" aria-live="polite">
+    <h2>Selecione um artigo</h2>
+    <p>Escolha uma lei no topo, depois um artigo na lista à esquerda. Você pode digitar para buscar rapidamente.</p>
+  </article>
+</main>
+
+<footer class="footer">
+  <span id="meta"></span>
+  <button id="copyLinkBtn" title="Copiar link do artigo atual">Copiar link</button>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
